@@ -21,3 +21,33 @@ public class CompensateGetInfoService extends HttpService
 	}
 }
 ```
+```as3
+public class FrameworkBundle implements IBundle
+{
+	/**
+	 * Constructor
+	 **/
+	public function FrameworkBundle()
+	{
+	}
+	
+	public function extend(context:IContext):void
+	{
+		context.install( 
+			AssetsExtension, 
+			PopupExtension,
+			HttpExtension,
+			FacebookExtension,
+			DebugConsoleExtension
+		);
+		
+		context.configure( 
+			FacebookConfig
+		);
+	}
+}
+```
+```as3
+```
+```as3
+```
