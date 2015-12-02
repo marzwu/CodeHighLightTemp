@@ -48,6 +48,13 @@ public class FrameworkBundle implements IBundle
 }
 ```
 ```as3
+serversFactory.getEmptyService(AppServiceNameConst.ACTIVITY_PRODUCT_GET_REWARD)
+	.send([AppData.myId,activityId,rewardIndex,TimeManager.getTime()]);
+```
+```as3
+eventDispatcher.dispatchEvent(new CommonEvent(CommonEvent.ACH_POINT_UPDATE));
+```
+```as3
 ```
 ```as3
 ```
