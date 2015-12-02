@@ -70,8 +70,12 @@ dispatchEvent(new MasteryUpgradeViewEvent(MasteryUpgradeViewEvent.CLICK_SHARE,_d
 </widget>
 ```
 ```as3
+_view = _assetsFactory.getMovieClip('petShopView', AppAssetsConst.PET_SHOP_VIEW);
+this.addChild(_view);
 ```
 ```as3
+skin = _assetsFactory.getMovieClip('goodsItem',AppAssetsConst.QUICK_BUY_VIEW);
+_sprite.addChild(skin);
 ```
 ```as3
 ```
