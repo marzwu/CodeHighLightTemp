@@ -64,9 +64,9 @@ dispatchEvent(new MasteryUpgradeViewEvent(MasteryUpgradeViewEvent.CLICK_SHARE,_d
 ```
 ```xml
 <widget folder="">
-    <item id="CommonView"               p = "1">/assets/widget/common.swf</item>
-    <item id="TipsView"                 p = "1">/assets/widget/tips.swf</item>
-    <item id="MessagePanelView"         p = "1">/assets/widget/common.swf</item>
+    <item id="CommonView"		p = "1">/assets/widget/common.swf</item>
+    <item id="TipsView"			p = "1">/assets/widget/tips.swf</item>
+    <item id="MessagePanelView"	p = "1">/assets/widget/common.swf</item>
 </widget>
 ```
 ```as3
