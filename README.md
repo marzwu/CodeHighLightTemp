@@ -78,8 +78,11 @@ skin = _assetsFactory.getMovieClip('goodsItem',AppAssetsConst.QUICK_BUY_VIEW);
 _sprite.addChild(skin);
 ```
 ```as3
+app.engine.widget // UI框架
+
 ```
 ```as3
+context.injector.map(IHttpServiceFactory).toSingleton(HttpServiceFactory);
 ```
 ```as3
 ```
