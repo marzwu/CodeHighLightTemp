@@ -82,7 +82,9 @@ app.engine.widget // UI框架
 
 ```
 ```as3
-context.injector.map(IHttpServiceFactory).toSingleton(HttpServiceFactory);
+context.injector.map(IHttpServiceFactory).toSingleton(HttpServiceFactory); // 映射接口到类型，并且是单例
+inject.map(JsProxy).toValue(jsProxy); // 映射实例
+context.injector.map(IDirectCommandMap).toType(DirectCommandMap); // 映射类型
 ```
 ```as3
 ```
