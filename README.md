@@ -87,6 +87,17 @@ inject.map(JsProxy).toValue(jsProxy); // 映射实例
 context.injector.map(IDirectCommandMap).toType(DirectCommandMap); // 映射类型
 ```
 ```as3
+[Inject]
+public var myDependency:Depedency; //未命名注入
+
+[Inject(name="myNamedDependency")]
+public var myNamedDependency:NamedDepedency; //命名注入
+
+var jsProxy:JsProxy = new JsProxy;
+inject.map(JsProxy).toValue(jsProxy);
+
+var namedJsProxy:JsProxy = new JsProxy;
+inject.map(JsProxy, 'myNamedDependency').toValue(namedJsProxy);
 ```
 ```as3
 ```
